@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Product</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="Contact.html">Contact</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="Home.html">Home</a>
+                <a href="Products.html">Product</a>
+                <a href="faq.html">Faq</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+        <center>
+            <div>
+                <h2>Formularz kontaktowy</h2>
+                <div id="send_form_status"></div>
+                <form id="contactform" action="https://formsubmit.io/send/FortnitowyTutorial@gmail.com" method="POST">
+                    <div><label for="name">Imię i nazwisko</label></div>
+                    <div><input type="text" name="name" id="name" class="formField" /></div>
+                    <div><label for="phone">Numer telefonu</label></div>
+                    <div><input type="text" name="phone" id="phone" class="formField" /></div>
+                    <div><label for="email">Adres email</label></div>
+                    <div><input type="text" name="email" id="email" class="formField" /></div>
+                    <div><label for="message">Treść wiadomości</label></div>
+                    <div><textarea name="message" id="message" class="formField"></textarea></div>
+                    <div><button id="sendBtn">Wyślij</button></div>
+
+                    <input name="_redirect" type="hidden" id="name" value="http://127.0.0.1:5500/Dzieki.html">
+                </form>
+            </div>
+        </center>
+    </body>
+</html>
